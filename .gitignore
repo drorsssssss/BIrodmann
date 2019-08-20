@@ -1,7 +1,6 @@
 
 /.idea/
 BIrodmann.iml
-Files/input_files/
 main/Config/__pycache__/
 main/DataModel/__pycache__/
 main/Executors/__pycache__/
