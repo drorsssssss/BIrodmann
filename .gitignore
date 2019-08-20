@@ -1,0 +1,14 @@
+
+/.idea/
+BIrodmann.iml
+Files/input_files/
+main/Config/__pycache__/
+main/DataModel/__pycache__/
+main/Executors/__pycache__/
+main/Factories/Persistence/__pycache__/
+main/Factories/Reports/ReportAggUser/__pycache__/
+main/Factories/Reports/__pycache__/
+main/Factories/__pycache__/
+main/Helpers/__pycache__/
+test/unit_tests/test_report_agg_user/__pycache__/
+/BIrodmann.iml
