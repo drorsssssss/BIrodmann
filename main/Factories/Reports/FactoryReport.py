@@ -1,5 +1,5 @@
 from main.Factories.Reports.ReportAggUser.ReportAggUser import ReportAggUser
-
+from main.Factories.Reports.ReportEnums import ReportNames
 
 class FactoryReport:
     """ Factory specific report class """
@@ -10,4 +10,4 @@ class FactoryReport:
         self.logger=logger
 
     def build(self):
-        if self.report == "report_agg_user" : return ReportAggUser(self.conf,self.logger)
+        if self.report == ReportNames.AGGUSER.value : return ReportAggUser(self.conf,self.logger)

@@ -22,6 +22,8 @@ class SourceColumns(Enum):
 
 class CalcColumns(Enum):
     COUNT="count"
+    HOUR="hour"
+    RESOLUTION="resolution"
 
 
 
