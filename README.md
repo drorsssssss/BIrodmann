@@ -9,18 +9,25 @@ This version support the following features:
 - Sketch tool for visualization
 
 <h3>Setup Instructions</h3>
-- Download and install Docker for Ubuntu/CentOS etc...
-- git clone https://github.com/drorsssssss/BIrodmann.git
-- go to /Brodmann/BIrodmann
-- docker build -t birodmann .
-- docker run -v "$(pwd)"/Files:/Brodmann/BIrodmann/Files birodmann --create_report "report_agg_user" --sketch_report "user_count_events" --conf "Files/conf/application.conf"
+ 
+ - Download and install Docker for Ubuntu/CentOS etc
+ - git clone https://github.com/drorsssssss/BIrodmann.git
+ 
+ - cd ./BIrodmann
+ 
+ - docker build -t birodmann .
+ 
+ - docker run -v "$(pwd)"/Files:/Brodmann/BIrodmann/Files birodmann --create_report "report_agg_user" --sketch_report "user_count_events" --conf "Files/conf/application.conf"
 
 
 
 <h4>Docker run parameters</h4>
-- --create_report parameter: Expect the report name to be calculated. Currently support "report_agg_user"
-- --sketch_report parameter: Expect the graph name to be sketched. Currently support "user_count_events"
-- --conf parameter:(Mandatory) Expect a configuration file (.conf). See reference in Files/conf/application.conf
+ 
+ - "--create_report" parameter: Expect the report name to be calculated. Currently support "report_agg_user"
+ 
+ - "--sketch_report" parameter: Expect the graph name to be sketched. Currently support "user_count_events"
+ 
+ - "--conf" parameter:(Mandatory) Expect a configuration file (.conf). See reference in Files/conf/application.conf
 
 <h5>Configuration file</h5>
 The BIrodmann app uses HOCON configuration format which is much more user-friendly than other conf formats.
@@ -48,9 +55,13 @@ The parameters:
  
  
  <h4>Unit Testing</h4>
+ 
  In order to run the unit tests, please follow these steps:
+ 
  - Go to Brodmann/BIrodmann/test/unit_tests/test_report_agg_user
+ 
  - Edit test_report_agg_user.py - Change the base path parameter (BASE_PATH)
+ 
  - Run test_report_agg_user.py
  
  
